@@ -18,7 +18,7 @@ if [ ! -f $gofile ]; then
     sudo wget https://storage.googleapis.com/golang/go1.4.2.linux-amd64.tar.gz -P /usr/local/
 fi
 
-sudo tar xzf $gofile -C /usr/local/bin
+sudo tar xzf $gofile -C /usr/local/
 
 shell_username=`id -u -n`
 shell_groupname=`id -g -n`
