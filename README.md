@@ -17,9 +17,11 @@ break it.
 
 To install all the go plugins for vim, simply do this:
 
-# git clone  https://github.com/vijayendrabvs/vimgo-setup.git
-# cd vimgo-setup/ubuntu/
-# ./setup-vim-go.sh 
+```
+git clone  https://github.com/vijayendrabvs/vimgo-setup.git
+cd vimgo-setup/ubuntu/
+./setup-vim-go.sh 
+```
 
 vim-go can be found at:
 
