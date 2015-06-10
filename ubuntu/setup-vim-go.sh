@@ -1,6 +1,6 @@
 #!/bin/bash
 
-set -x
+#set -x
 
 sudo apt-get update
 sudo apt-get install -y vim
