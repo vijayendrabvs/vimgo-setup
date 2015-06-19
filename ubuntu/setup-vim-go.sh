@@ -36,7 +36,7 @@ vim +PluginInstall +qall
 # Install Go binaries. We will need to set GOPATH temporarily
 # to a directory where the user places go source files in a src/
 # subdirectory.
-echo "Enter a directory path that will be your GOROOT: "
+echo "Enter a directory path that will be your GOROOT (the script will create this directory) : "
 read GOROOT
 # Create that directory
 mkdir $GOROOT
@@ -51,10 +51,6 @@ export GOROOT=
 vim +GoInstallBinaries +qall
 
 
-# Finally put in GOPATH and GOBIN in the shell.
-# Also, don't forget to export GOPATH 
-echo "export GOPATH=/usr/local/go" >> ~/.bashrc
-echo "export PATH=\$PATH:\$GOPATH/bin" >> ~/.bashrc
-echo "export GOROOT=$GOROOTORIG" >> ~/.bashrc
-
+echo "export PATH=\$PATH:/usr/local/go/bin" >> ~/.bashrc
+source ~/.bashrc
 exit 0

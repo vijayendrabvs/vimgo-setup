@@ -421,3 +421,7 @@ let g:airline#extensions#whitespace#enabled = 0
 "let g:airline_symbols.linenr = '⭡'
 
 let g:formatprg_args_expr_java = '"--mode=java --style=ansi -pcH".(&expandtab ? "s".&shiftwidth : "t")'
+
+filetype indent off
+set nonumber
+colorscheme morning
