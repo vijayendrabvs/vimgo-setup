@@ -424,4 +424,4 @@ let g:formatprg_args_expr_java = '"--mode=java --style=ansi -pcH".(&expandtab ? 
 
 filetype indent off
 set nonumber
-colorscheme morning
+colorscheme desert
